@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An app to brain storm from one word.">
+  <title>Rhyme on a Dime</title>
+  <script>
+    document.cookie = 'same-site-cookie=foo; SameSite=Strict';
+    document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+    document.cookie = 'youtube.com; SameSite=None; Secure';
+
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173569381-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173569381-1');
+  </script>
+
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <!--[if lte IE 8]>
+          <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+      <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+  <!--[if lte IE 8]>
+              <link rel="stylesheet" href="css/rhyme-old-ie.css">
+          <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="css/rhyme.css">
+  <!--<![endif]-->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+</head>
+
+<body>
+
+  <header>
+    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+      <!-- <a class="pure-menu-heading" href="">Rhyme on a Dime</a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-selected"><a href="#" class="pure-menu-link">Home</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Video</a></li>
+            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Pictures</a></li>
+        </ul> -->
+    </div>
+  </header>
+  <main>
+    <div class="splash-container">
+      <div class="splash">
+        <h1><a href="https://www.rhymeonadime.org"><img class="pure-img-responsive"
+              src="images/rhyme-on-a-dime-logo-white-1000px.png" alt="Rhyme on a Dime"></a>
+        </h1>
+        <p class="splash-subhead">
+          Enter a word find to rhymes &amp; inspiration.
+        </p>
+        <form class="pure-form">
+          <input type="text" name="rhymeInput" class="pure-input-rounded" placeholder="What word would you like rhyme?">
+          <button type="submit" class="pure-button">Search</button>
+        </form>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <div class="content">
+        <h2 class="content-head is-center"></h2>
+        <div class="pure-g">
+          <div id='syl1' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              1-Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+          <div id='syl2' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              2-Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+          <div id='syl3' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              3-Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+          <div id='syl4' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              4-Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+          <div id='syl5' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              5-Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+          <div id='syl6' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              6-Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+          <div id='syl7' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              7-Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+          <div id='syl8' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              8-Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+          <div id='syl9' class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <h3 class="content-subhead">
+              9 Word Syllables
+            </h3>
+            <p>
+            </p>
+          </div>
+
+        </div>
+      </div>
+      <div class="ribbon l-box-lrg pure-g">
+        <div class="l-box is-center pure-u-1 pure-u-md-1-2 pure-u-lg-5-5">
+          <h2 class="content-head content-head-ribbon"></h2>
+        </div>
+        <div class="inner-ribbon">
+          <div id="vid1" class="is-center pure-u-md-1-2">
+            <p></p>
+            <iframe id="ivid1" class="video w100" width="500" height="281" src="//www.youtube.com/embed/"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="vid2" class="is-center pure-u-md-1-2">
+            <p></p>
+            <iframe id="ivid2" class="video w100" width="500" height="281" src="//www.youtube.com/embed/"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="vid3" class="is-center pure-u-md-1-2">
+            <p></p>
+            <iframe id="ivid3" class="video w100" width="500" height="281" src="//www.youtube.com/embed/"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+          <div id="vid4" class="is-center pure-u-md-1-2">
+            <p></p>
+            <iframe id="ivid4" class="video w100" width="500" height="281" src="//www.youtube.com/embed/"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <h2 class="content-head is-center"></h2>
+
+        <div class="pure-g">
+          <div id="image1" class="l-box-lrg pure-u-1 pure-u-md-1-3">
+          </div>
+
+          <div id="image2" class="l-box-lrg pure-u-1 pure-u-md-1-3">
+          </div>
+
+          <div id="image3" class="l-box-lrg pure-u-1 pure-u-md-1-3">
+          </div>
+
+          <div id="image4" class="l-box-lrg pure-u-1 pure-u-md-1-3">
+          </div>
+
+          <div id="image5" class="l-box-lrg pure-u-1 pure-u-md-1-3">
+          </div>
+
+          <div id="image6" class="l-box-lrg pure-u-1 pure-u-md-1-3">
+          </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      </div>
+      <div class="footer l-box is-center">
+        Copyright &copy;2020 Rhyme on a Dime. All Rights Reserved. Powered by Datamuse.
+      </div>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/rhyme.js"></script>
+  <script src="https://apis.google.com/js/client.js?onload=init"></script>
+</body>
+
+</html>
